@@ -6,7 +6,7 @@
 # catalog-version 1.03
 Name:		texlive-yax
 Version:	1.03
-Release:	9
+Release:	10
 Summary:	Yet Another Key System
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/yax
