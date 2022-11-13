@@ -1,18 +1,12 @@
-# revision 21183
-# category Package
-# catalog-ctan /macros/generic/yax
-# catalog-date 2011-01-23 17:05:29 +0100
-# catalog-license lppl
-# catalog-version 1.03
 Name:		texlive-yax
-Version:	1.03
-Release:	11
+Version:	54080
+Release:	1
 Summary:	Yet Another Key System
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/yax
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ possible), but may be customized. YaX is based on texapi and
 thus requires e-TeX.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,23 +42,10 @@ thus requires e-TeX.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.03-2
-+ Revision: 757741
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.03-1
-+ Revision: 719962
-- texlive-yax
-- texlive-yax
-- texlive-yax
-
