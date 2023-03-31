@@ -1,6 +1,6 @@
 Name:		texlive-yax
 Version:	54080
-Release:	1
+Release:	2
 Summary:	Yet Another Key System
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/yax
