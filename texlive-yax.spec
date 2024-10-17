@@ -3,7 +3,7 @@ Version:	54080
 Release:	2
 Summary:	Yet Another Key System
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/generic/yax
+URL:		https://www.ctan.org/tex-archive/macros/generic/yax
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/yax.doc.r%{version}.tar.xz
